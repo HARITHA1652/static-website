@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato|Nanum+Gothic:700|Raleway&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="Style.css">
+
+    <title>TANTUM PROJECTS</title>
+</head>
+<body>    
+    
+    <header id="topHeader">
+        
+        
+        <div class="nav">
+            <span class="logo">TANTUM PROJECTS</span>
+            <div class="menu-btn-3" onclick="menuBtnFunction(this)">
+                <span></span>
+            </div>
+            <div class="mainMenu">
+                <a href="home"><span>HOME</span></a>
+                <a href="about us"><span>ABOUT US</span></a>
+                <a href="what we do"><span>WHAT WE DO</span></a>
+                <a href="projects"><span>PROJECTS</span></a>
+                <a href="blog"><span>BLOG</span></a>
+                <a href="contact"><span>CONTACT</span></a>
+               
+            </div class="mainMenu">
+      </div>
+    </header>
+
+    <section id="intro">
+        <div id="intro-info">
+            <div>
+                <h1 style="font-size: 40px;color: teal;font-weight: 600;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Throw Your First Boomerang Today,and Prepare to Catch the Profits</h1>
+                <div id="intro-tag-btn">
+                    <span>"Exclusive properties deals that are not available through traditional means,Unlock"..</span>
+                    <a href="" class="brand-btn">Let's Talk</a>
+                </div>
+            </div>
+        </div>
+        <div id="development-img">
+            <img src="https://www.dropbox.com/s/7hwnjccu15vt90e/mobileDevlopment.svg?raw=1">
+        </div>
+
+       
+    </section>
+
+    <section id="about">
+        <h1 class="sec-heading">ABOUT US</h1>
+        
+        <div class="col-7">
+            <center><h2>Accelerating your business growth with Digital Experiences</h2>
+            <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<br/><br/> It has survived not only five centuries, but also the leap into electronic typesetting,
+            </p>
+            <div class="btn-footer">
+                <a href="" class="brand-btn">Know More</a>
+            </div></center>
+        </div>
+    </section>
+
+    <section id="services">
+        <h1 class="sec-heading">WHAT WE DO</h1>
+        <ul>
+            <li>
+                <div>
+                    <a href="">
+                        <i class="fas fa-laptop"></i><span>Stratagy and Consultant</span>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <a href="">
+                        <i class="fas fa-users"></i><span>User Experience Design</span>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <a href="">
+                        <i class="fas fa-mobile-alt"></i><span>Mobile App Development</span>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <a href="">
+                        <i class="fab fa-chrome"></i><span>Web App Development</span>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <a href="">
+                        <i class="fas fa-ribbon"></i><span>Quality Analysis and Testing</span>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <a href="">
+                        <i class="fas fa-ticket-alt"></i><span>Application Management & Support</span>
+                    </a>
+                </div>
+            </li>
+        </ul>
+        
+        <div id="service-footer">
+            <a href="" class="brand-btn">View All Service</a>
+        </div>
+    </section>
+    
+    
+        
+        
+                    
+       
+     
+
+    
+  
+    
+    
+    <h1 class="sec-heading">CONTACT</h1>
+    
+    <div class="comment-box">
+  
+        <form>
+          <div class="user-box">
+            <input type="text" name="" required="">
+            <label>Your Name</label>
+          </div>
+          <div class="user-box">
+              <input type="text" name="" required="">
+              <label>Your Email Address</label>
+            </div>
+          <div class="user-box">
+            <input type="number" name="" required="">
+            <label>Your Number</label>
+          </div>
+          <div class="user-box">
+              <input type="textarea" name="" required="">
+              <label>Leave Your Message</label>
+            </div>
+          <a href="#">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <i class="fa fa-paper-plane"></i>
+          </a>
+        </form>
+      </div>
+      <p><center>Copyright © 2023. All Rights Reserved.<br>
+    
+    <script>
+
+$(document).ready(function(){
+    
+    $(window).scroll(function(){
+        if($(this).scrollTop() >= 500) {
+            $("#gotop").fadeIn();
+      
+            $("#top-btn").click(function(){
+                $(window).scrollTop(0);
+            });
+         }
+         else {
+             $("#gotop").fadeOut();
+         }    
+    });
+});
+
+function menuBtnFunction(menuBtn) {
+    menuBtn.classList.toggle("active");
+    $(".mainMenu").toggleClass("active");
+    $(".mainMenu a").toggleClass("active");
+}
+    </script>
+    
+</body>
+</html>
